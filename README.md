@@ -5,7 +5,7 @@ Movie based Spring Boot project made on Spring Tool Suite 4 (STS 4)
 
 Run using - http://localhost:8083/getall
 
-### Specifications
+## Specifications
 Created **Spring Starter Project** with **dependencies** auto-generated on **pom.xml** for the following:
 1) **Spring Web Services**
 2) **Spring Web**
@@ -16,7 +16,7 @@ Created **Spring Starter Project** with **dependencies** auto-generated on **pom
 
 ***Postman API*** tool used for **GET PUT POST DELETE** by using **@GetMapping, @PutMapping, @PostMapping, @DeleteMapping** etc
 
-### Java Packages:
+## Java Packages:
 1) Controller – mycontroller.java - @RestController 
 2) Entities – Movie Class implements Serializable
 
@@ -24,6 +24,8 @@ In mycontroller.java, the RestController class, only the path for method-calling
 
 for example - @GetMapping("/getall")
 and a String variable 'endpoint' containing the path of SpringBootProject1-ServerSide-Movie is used inside an instantiated **RestTemplate** object and then **getForObject()** is performed
+
+### Example Snippet from mycontroller.java
 
 @GetMapping("/getall")
 public List<Movie> getall()
