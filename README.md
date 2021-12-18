@@ -29,9 +29,9 @@ and a String variable 'endpoint' containing the path of SpringBootProject1-Serve
 
 @GetMapping("/getall")
 public List<Movie> getall(){
-String endpoint="http://localhost:8080/movies/";                      //SpringBootProject-1 URL
+String endpoint="http://localhost:8080/movies/";                      // SpringBootProject-1 URL
 	
-RestTemplate rt=new RestTemplate();                                   //rt - RestTemplate object
+RestTemplate rt=new RestTemplate();                                   // rt - RestTemplate object
 	
 List<Movie> m=Arrays.asList(rt.getForObject(endpoint,Movie[].class)); // getForObject() containing endpoint associated with Entity class Movie
 	
