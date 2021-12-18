@@ -32,9 +32,9 @@ public class mycontroller {
 	}
 	@GetMapping("/getall")
 	public List<Movie> getall() {
-		String endpoint="http://localhost:8080/movies/";
-		RestTemplate rt=new RestTemplate();
-		List<Movie> m=Arrays.asList(rt.getForObject(endpoint,Movie[].class));
+		String endpoint="http://localhost:8080/movies/";        // URL for SpringBootProject-1
+		RestTemplate rt=new RestTemplate();			// rt - RestTemplate object
+		List<Movie> m=Arrays.asList(rt.getForObject(endpoint,Movie[].class)); // getForObject() containing endpoint associated with Entity Class Movie
 		return m;
 	}
 	@GetMapping("/getbygenre/{mgenre}")
