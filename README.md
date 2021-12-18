@@ -1,4 +1,4 @@
-# SpringBootProjectClientSide-Movie
+# SpringBootProject2-Movie-ClientSide
 Movie based Spring Boot project made on Spring Tool Suite 4 (STS 4)
 
 ***SpringBootProject2-Movie - GETS/PUTS/POSTS/DELETES from SpringBootProject1-ServerSide-Movie***
